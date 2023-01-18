@@ -1,0 +1,25 @@
+.pic-gallery{
+    
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid black;
+   
+}
+h2{
+    align-items: center;
+   
+}
+.image-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 1rem;
+    
+} 
+
+.images-all{
+    
+    grid-gap: 1rem;
+    padding: 1rem;
+    border: 1px solid black;
+}

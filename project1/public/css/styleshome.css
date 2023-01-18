@@ -1,0 +1,440 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    height: 100vh;
+    margin: 0;
+
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    width: 100%;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: pink;
+    color: #fff;
+}
+
+.nav-links a {
+    color: #fff;
+}
+
+.logo {
+    font-size: 32px;
+}
+
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+.menu li:hover {
+    background-color: #9324b2;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.menu li {
+    padding: 5px 14px;
+}
+
+.services {
+    position: relative;
+}
+
+.dropdown {
+    background-color: rgb(1, 139, 139);
+    padding: 0.5rem;
+    position: absolute;
+    display: none;
+    border-radius: 8px;
+    top: 10px;
+
+}
+
+.dropdown li+li {
+    margin-top: 1rem;
+
+}
+
+.dropdown li {
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+
+}
+
+.dropdown li:hover {
+    background-color: #4c9e9e;
+}
+
+.services:hover .dropdown {
+    display: block;
+
+
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+.material-symbols-rounded {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+span.material-symbols-outlined {
+    display: none;
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+nav img {
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: #76D7C4;
+        right: 0;
+        left: 0;
+        margin-top: 20rem;
+        text-align: center;
+        padding: 16px 0;
+    }
+
+    .menu li:hover {
+        display: inline-block;
+        background-color: #4c9e9e;
+        transition: 0.3s ease;
+    }
+
+    .menu li+li {
+        margin-top: 12px;
+    }
+
+    input[type=checkbox]:checked~.menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .dropdown {
+        left: 50%;
+        top: 10px;
+        transform: translateX(35%);
+    }
+
+    .dropdown li:hover {
+        background-color: #4c9e9e;
+    }
+
+    span.material-symbols-outlined {
+        display: inline;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        background-color: f4acb7;
+        color: #fff;
+    }
+}
+
+body {
+    background-color: paleturquoise;
+}
+
+nav.navbar {
+    padding: 0;
+}
+
+
+h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+
+}
+
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+
+    padding: 1rem;
+    margin: 0px;
+}
+
+.nav_menu {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    list-style-type: none;
+
+    padding: 1rem;
+    margin: 0px;
+
+}
+
+.card-purple,
+.card-#76D7C4,
+.card-green,
+.card-yellow,
+.card-orange,
+.card-red:hover {
+    box-shadow: none;
+}
+
+
+.cards {
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 2rem;
+    display: grid;
+    justify-items: center;
+    box-shadow: 3px 3px 3px 3px grey;
+    grid-column: span 3;
+    grid-template-rows: auto 300px 1fr auto;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    grid-column-start: 3;
+    grid-column-end: 10;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 100%;
+
+    padding: 1rem;
+    margin: 0px;
+
+    background-color: rebeccapurple;
+    border-right: 1px solid black;
+    border-radius: 2rem;
+    background-color: pink;
+    box-shadow: 3px 3px 3px 3px white;
+
+}
+.card-purple {
+    background-color: #C39BD3;
+}
+.card-#76D7C4 {
+    background-color: #3498DB;
+}
+.card-green {
+    background-color: #52BE80;
+}
+.card-yellow {
+    background-color: #F9E79F;
+}
+.card-red {
+    background-color:#EC7063;
+}
+.card-orange {
+    background-color: #D35400;
+}
+
+
+.card-link {
+    padding: 1rem;
+    background-color: alice#76D7C4;
+    border-radius: 1rem;
+    color: black;
+    text-decoration-color: none;
+}
+
+
+.card {
+    aspect-ratio: 1/1;
+}
+
+Footer {
+    display: grid;
+    background-color: pink;
+}
+
+.Footer-menu {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    list-style-type: none;
+
+    padding: 1rem;
+    margin: 0px;
+
+    font-size: 0.8rem;
+}
+header {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+
+    font-family: Arial;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+
+}
+footer {
+
+    display: inline-block;
+    width: 100%;
+   
+    padding: 1rem;
+    margin-right: 1rem;
+    background-color: pink;
+    color: black;
+    border-top: 1px solid rgb(25, 24, 24);
+    box-sizing: border-box;
+
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-evenly;
+    list-style-type: none;
+    
+    font: sans-serif;
+    text-transform: uppercase;
+
+}
+
+li {
+    margin: 0.3rem;
+    padding: 0.3rem;
+
+}
+
+ul.footer-links {
+    padding: 0%;
+    margin: 0%;
+}
+
+@media screen and (min-width: 50rem) {
+
+    html,
+    body {
+        display: grid;
+    
+        background-color: #D6EAF8;
+    }
+
+    .nav_menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .card {
+        grid-column: span 4;
+        display: flex;
+        flex-direction: column;
+        
+        align-items: center;
+        width: 100%;
+
+        padding: 1rem;
+        margin: 0px;
+        border: 1px solid black;
+        border-radius: 2rem;
+
+        
+        box-shadow: 3px 3px 3px 3px grey;
+    }
+
+    .Footer-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    footer {
+        background-color: pink;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 40rem) {
+    .card {
+        
+    }
+}

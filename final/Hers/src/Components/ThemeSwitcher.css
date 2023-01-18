@@ -1,0 +1,40 @@
+
+
+.theme-switcher__toggle{
+    display: flex;
+    padding: 4px;
+    border-radius: 2rem;
+    border: 2px solid black;
+    font-size:1rem;
+
+    background-color: slateGray;
+    justify-content: space-between;
+
+	width: 90px;
+	height: 100%;
+    
+	
+	box-shadow: -4px 4px 15px inset rgba(0, 0, 0, 0.4);
+	
+	
+    
+}
+
+.theme-switcher__switch{
+  
+    display: inline block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
+    background-color: aliceblue;
+
+
+}
+.app.dark .theme-switcher__switch{
+    order:2;
+}
+
+
+
+
+

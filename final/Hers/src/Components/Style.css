@@ -1,0 +1,206 @@
+.style__list {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+    grid-gap: 20px;
+
+    margin: 1rem;
+}
+
+.cardstyle {
+    display: grid;
+
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 100%;
+
+    padding: 0.25rem;
+    margin: 0px;
+
+
+
+    background-color: #eeeeee;
+    font-size: 1rem;
+
+}
+
+.style__pic {
+
+    width: 100%;
+    height: auto;
+    background-color: #f4f4f4;
+    display: block;
+}
+
+.gg-heart,
+.gg-heart::after {
+    border: 2px solid;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    width: 10px;
+    height: 8px;
+    border-bottom: 0
+}
+
+.gg-heart {
+    box-sizing: border-box;
+    position: relative;
+    transform:
+        translate(calc(-10px / 2 * var(--ggs, 1)),
+            calc(-6px / 2 * var(--ggs, 1))) rotate(-45deg) scale(var(--ggs, 1));
+    display: block
+}
+
+.gg-heart::after,
+.gg-heart::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute
+}
+
+.gg-heart::after {
+    right: -9px;
+    transform: rotate(90deg);
+    top: 5px
+}
+
+.gg-heart::before {
+    width: 11px;
+    height: 11px;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    left: -2px;
+    top: 3px
+}
+
+.customtag {
+    position: relative;
+    color: #fc2779;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+
+
+}
+
+.heart {
+    display: inline-block;
+    color: rgb(0, 19, 37);
+    height: 24px;
+    width: 24px;
+    border-radius: 100%;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    padding: 10px;
+    right: -20px;
+    top: -20px;
+}
+
+.link-style {
+    /* display: inline; */
+
+    /* appearance: button; */
+    text-decoration: none;
+    backface-visibility: hidden;
+    background-color: #405cf5;
+    border-radius: 6px;
+    border-width: 0;
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .1) 0 2px 5px 0, rgba(0, 0, 0, .07) 0 1px 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
+    font-size: 100%;
+    height: 40px;
+    line-height: 1.15;
+    margin: 12px 0 0;
+    outline: none;
+    overflow: hidden;
+    padding: 0.5rem;
+
+    width: 60%;
+}
+
+.link-style:disabled {
+    cursor: default;
+}
+
+.link-style:focus {
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+
+
+.dressbrand {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 16px;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+    color: #192837;
+    margin-bottom: 0.125rem;
+    margin-top: 0.75rem;
+}
+
+.dressname {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+    margin-bottom: 0.5rem;
+    color: #192837;
+    margin-top: 0.25rem;
+}
+
+.price {
+    color: #192837;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    -webkit-letter-spacing: -0.1px;
+    -moz-letter-spacing: -0.1px;
+    -ms-letter-spacing: -0.1px;
+    letter-spacing: -0.1px;
+}
+
+.priceactual {
+    color: #192837;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    -webkit-letter-spacing: -0.1px;
+    -moz-letter-spacing: -0.1px;
+    -ms-letter-spacing: -0.1px;
+    letter-spacing: -0.1px;
+    -webkit-text-decoration: line-through;
+    text-decoration: line-through;
+    color: rgba(0, 19, 37, 0.36);
+    margin-left: 0.25rem;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}

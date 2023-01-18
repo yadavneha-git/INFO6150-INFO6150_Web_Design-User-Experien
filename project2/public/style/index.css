@@ -1,0 +1,468 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html
+
+body {
+
+    display: grid;
+    /* grid-row-gap: 10px; */
+    grid-column-gap: 10px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background-color: papayawhip;
+    /* grid-row-gap: 10px; */
+    grid-column-gap: 10px;
+    height: 100%;
+}
+.skip-to-main-content-link {
+    position: absolute;
+    left: -9999px;
+    z-index: 999;
+    font-size: 1rem;
+ 
+    opacity: 0;
+  }
+  .skip-to-main-content-link:focus {
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+  }
+
+  header {
+    /* display: flow-root; */
+    width: 100%;
+    background-color: burlywood;
+    margin: 0;
+    padding: 0;
+}
+.logo h1 {
+    display: inline;
+    position: absolute;
+    top: 18px;
+    left: 30%;
+  }
+  
+   .logo img { 
+   display: inline;
+  width: 100%;
+}
+/* .card-pic{
+    align-items: right;
+}
+.card-container2 img{
+    float: left;
+} */
+
+div.logo{
+
+    overflow:auto;
+    display: flex;
+    flex-direction: row;
+} 
+div.h1{
+    display: inline-block;
+}
+li {
+    list-style: none;
+
+}
+
+
+h2{
+    text-align: center;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 1.2rem;
+}
+
+i.gg-menu{
+    display: none;
+}
+
+div.menu{
+    justify-content: space-between;
+}
+.menu {
+   
+    gap: 1em;
+    font-size: 1rem;
+}
+
+.menu li:hover {
+    background-color: #1589FF;
+    text-decoration: underline;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+.menu li a:hover{
+    color: white;
+
+}
+
+.menu li {
+    padding: 5px 14px;
+}
+
+
+
+input[type=checkbox] {
+    display: none;
+}
+
+
+.hamburger {
+    display: none;
+    font-size: 1rem;
+    user-select: none;
+}
+
+
+span.material-symbols-outlined {
+    display: none;
+    font-size: 1rem;
+    user-select: none;
+}
+
+nav img {
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+button.button1{
+    display: none;
+}
+@media (max-width: 44rem) {
+    html,body{
+        grid-row-gap: 0;
+        overflow-x: hidden; 
+    }
+    /* "below CSS adapted from https://css.gg under the MIT License" */
+    i.gg-menu{
+        display: block;
+    }
+    .gg-menu {
+        transform: scale(var(--ggs,1))
+       }
+       
+       .gg-menu,
+       .gg-menu::after,
+       .gg-menu::before {
+        box-sizing: border-box;
+        position: relative;
+        display: block;
+        width: 20px;
+        height: 2px;
+        border-radius: 3px;
+        background: currentColor
+       }
+       
+       .gg-menu::after,
+       .gg-menu::before {
+        content: "";
+        position: absolute;
+        top: -6px
+       }
+       
+       .gg-menu::after {
+        top: 10px
+       } 
+       #label{
+        display: none;
+       }
+       a
+       ul{
+         color:black;
+         transition: color 0.3s ease;
+       } 
+       ul#menu {
+        /* display: block; */
+        padding-inline-start: 0;
+        background-color: burlywood;
+
+    }
+    button.button1{
+        display: block;
+        appearance: none;
+    }
+
+    /* .menuItem {
+        display: block;
+        padding-right: 1rem;
+        margin: 2rem 4rem;
+        font-size: 1rem;
+        color: black;
+        text-decoration: none;
+        text-align: -webkit-right;
+        
+      } */
+      
+       
+      .menuclass1 {
+        position: absolute;
+         width: 300px;
+         padding-top: 4%;
+         top: 50px;
+         
+    
+         right: -100px;
+         
+         background:burlywood;
+         list-style-type: none;
+         -webkit-font-smoothing: antialiased;
+       
+         
+         transform-origin: 0% 0%;
+         transform: translate(100%, 0);
+         
+         transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+         /* display: none; */
+        /* position: fixed;
+        transform: translateY(-100%);
+        transition: transform 0.2s;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 99;
+        background: black;
+        color: white;
+        list-style: none;
+        padding-top: 4rem; */
+      }
+
+      .menuclass {
+        display: none;
+      }
+     
+
+      .button1 {
+        position: absolute;
+        z-index: 100;
+        top: 3rem;
+        right: 1rem;
+        padding: 4px;
+        border: black solid 1px;
+        background: white;
+        cursor: pointer;
+      }
+
+      .showMenu {
+        transform: translateY(0);
+        display: block;
+         position: absolute;
+         top: 50px;
+         /* right: 50px; */
+         
+         z-index: 1;
+         
+         -webkit-user-select: none;
+         user-select: none;
+        
+      }   
+    }
+
+
+Footer {
+    display: grid;
+    background-color: pink;
+}
+
+.Footer-menu {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    list-style-type: none;
+
+    padding: 1rem;
+    margin: 0px;
+
+    font-size: 1rem;
+}
+footer {
+
+    display: inline-block;
+    width: 100%;
+   
+    padding: 1rem;
+    margin-right: 1rem;
+    background-color: burlywood;
+    color: black;
+    border-top: 1px solid rgb(25, 24, 24);
+    box-sizing: border-box;
+
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-evenly;
+    list-style-type: none;
+    
+  
+    text-transform: uppercase;
+
+}
+
+
+
+ul.footer-links {
+    padding: 0%;
+    margin: 0%;
+}
+
+
+.cards
+{
+
+display: grid;
+border: 1px solid black;
+padding: 0.5rem;
+width: 100%;
+background-color: #eee;
+
+}
+.card-container1{
+    display: grid;
+    grid-template-columns: 10fr 2fr;
+    
+}
+.card-container2{
+    display: grid;
+    grid-template-columns:2fr 10fr;;
+    
+}
+.card-pic1{
+
+    grid-column: 2;
+    grid-row: 1 /6;
+    justify-self: start;
+    width: 200px;
+    height: 200px;
+
+}
+.card-pic2{
+
+    grid-column: 1;
+    grid-row: 1 /4;
+    justify-self: end;
+    width: 200px;
+    height: 200px;
+    margin-right: 0.5rem;
+    
+    }
+div.card.image2{
+margin-left: 0.5rem;
+margin-right: 1rem;
+}
+div.card.image1{
+    margin-left: 0.5rem;
+    
+    }
+
+p{
+    justify-content: space-around;
+
+}
+.cards .card.content .card-container h2
+{
+font-weight:700;
+font-size:1rem;
+margin-bottom:20px;
+}
+
+
+
+main.main {
+    display: grid;
+    gap: 1rem;
+    padding: 0.5rem;
+    height: 100%;
+}
+
+
+@media screen and (max-width: 44rem){
+  
+html,body{
+    grid-row-gap: 0; 
+    grid-column-gap: 0;
+    padding: 0;
+    margin: 0;
+    gap: none;
+}
+h2 {
+    text-align: center;
+    margin: 0;
+}
+.cards{
+    border-bottom: none;
+ }
+/* .cards .card.content .card-container1.card .image1{
+    float: left;
+    margin: 5px;
+    width: 190px;
+    height: 190px;
+}
+.cards .card.content .card-container2.card .image{
+    float: right;
+    margin: 5px;
+    width: 190px;
+    height: 190px;
+} */
+main.main {
+    padding: 0;
+    margin: 0;
+    gap: 0;
+   
+}
+.card-container1{
+    display: inline-block;
+}
+.card-container2{
+    display: inline-block;
+}
+.card-container1 img{
+    float: right;
+    margin-left: 0.5rem;
+    height: 125px;
+    width: 125px;
+}
+.card-container2 img{
+    float: left;
+    margin-right: 0.5rem;
+    height: 125px;
+    width: 125px;
+    
+}
+
+p{
+    padding:0.5rem;
+}
+
+button.button1{
+    display: block;
+     appearance: none; 
+    border: none;
+    background: border-box; 
+}
+.footer-links { 
+    display: flex;
+    flex-direction: column;
+}
+p.card-container-1{
+        clear: both;
+}
+}

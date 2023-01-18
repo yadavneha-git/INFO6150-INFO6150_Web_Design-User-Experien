@@ -1,0 +1,14 @@
+.Skiplink {
+   position: absolute;
+   left: -9999px;
+   z-index: 999;
+   font-size: 1rem;
+
+   opacity: 0;
+   background-color: white;
+ }
+ .Skiplink:focus {
+   left: 50%;
+   transform: translateX(-50%);
+   opacity: 1;
+ }

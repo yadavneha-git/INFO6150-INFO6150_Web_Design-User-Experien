@@ -1,0 +1,204 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.header {
+  display: grid;
+  grid-template-areas:
+    "logo header-title nav";
+  grid-template-columns: 1fr 1fr auto;
+
+
+
+  background-color: var(--header-bg);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.header-title {
+  grid-area: header-title;
+  align-items: center;
+}
+
+.header-nav__link {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.header-nav {
+  grid-area: nav;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.logo {
+  border-radius: 50px;
+  grid-area: logo;
+  height: 70px;
+}
+
+li {
+  list-style: none;
+}
+
+.header-nav {
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+.header-nav__list {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-items: center;
+
+}
+
+.header-nav__item {
+  align-items: center;
+  justify-items: center;
+  color: #7209b7;
+  font-size: 20px;
+  font-weight: 500;
+  transition: 0.5s;
+  margin: 0 20px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+}
+
+.header__theme-switcher {
+  grid-area: theme-switcher;
+}
+
+.Nav-hidden {
+  display: flex;
+  flex-direction: row;
+
+}
+
+ul {
+  margin-block: 0px;
+  padding-inline-start: 0px;
+}
+
+
+button.hamburger {
+  display: none;
+}
+
+.header-nav__list {
+  display: flex;
+  flex-direction: row;
+}
+
+
+@media (max-width: 44rem) {
+  .header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+
+  }
+
+  .header-nav__list {
+    display: none;
+  }
+
+  .header-nav {
+    padding: 2rem;
+  }
+
+  .header-title {
+    align-items: center;
+  }
+
+  .header-nav__item {
+    margin: 0.2rem;
+    padding: 1rem;
+
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .hamburger {
+    display: fixed;
+    padding-top: 15px;
+    z-index: 10;
+  }
+
+  button.hamburger {
+    display: contents;
+
+  }
+
+  /* "below CSS adapted from https://css.gg under the MIT License" */
+  .gg-menu {
+    transform: scale(var(--ggs, 1))
+  }
+
+  .gg-menu,
+  .gg-menu::after,
+  .gg-menu::before {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 3px;
+    border-radius: 3px;
+    background: currentColor
+  }
+
+  .gg-menu::after,
+  .gg-menu::before {
+    content: "";
+    position: absolute;
+    top: -6px
+  }
+
+  .gg-menu::after {
+    top: 6px
+  }
+
+  .header-nav button {
+    left: 40px;
+    top: 40px;
+    z-index: 10;
+    cursor: pointer;
+  }
+
+  .header-nav__list {
+    overflow-y: scroll;
+    list-style: none;
+    position: absolute;
+    top: 1%;
+    right: 0;
+    bottom: 0;
+    height: 40%;
+    width: 20 px;
+    overflow: hidden;
+    max-width: 290px;
+    z-index: 9;
+    display: inline;
+    background-color: darkcyan;
+    margin-top: 60px;
+    margin-left: 0;
+
+  }
+
+  .Nav-hidden {
+    display: none;
+  }
+
+}
