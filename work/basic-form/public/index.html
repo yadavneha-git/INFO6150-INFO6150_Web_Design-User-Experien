@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Cats News Subscription</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header>
+        <h1> Subscribe To Cats News </h1>
+    </header>
+    <main>
+        <p>Sign up to receive the free Modern Cat newsletter (giveaways, exclusive content, expert advice, CUTE CATS,
+            and more!)</p>
+        <fieldset>
+            <div class="message">
+                <p>Required fields are followed by <span aria-label="required">*</span></p>
+            </div>
+
+            <form class="formbox" action="/submit" method="post" >
+
+                <label for="users_name"> <span aria-label="required">*</span> Name: </label>
+                <input type="text" id="users_name" name="users_name" required>
+
+                <label for="users_email"> <span aria-label="required">*</span> Email: </label>
+                <input type="email" id="users_email" name="users_email" required>
+
+                <label for="tier"><span aria-label="required">*</span> Tier</label>
+                <select name="tier" id="tier" required>
+                    <option value="">Please select</option>
+                    <option value="1">Silver Tier</option>
+                    <option value="2">Gold Tier</option>
+                    <option value="3">Platinum Tier</option>
+                </select>
+
+                <div class="email">
+                    <input type="checkbox" id="annoy_me" name="annoy_me" checked>
+                    <label for="annoy_me"> Do you want us to send you annoying emails?</label>
+                </div>
+
+
+                <div class="submit">
+                    <input type="submit" value="Register">
+                </div>
+
+
+            </form>
+
+        </fieldset>
+    </main>
+
+    <footer class="pageFooter">
+        <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms and Condition</a></li>
+          </ul>
+        </div>
+        <p>&copy; cat.com Inc. All Rights Reserved. <a href="#"> Contact Us | </a> <a href="#">Our Company | </a> <a href="#">Careers </a></p>
+      </div>
+        
+    </footer>
+</body>
+
+</html>

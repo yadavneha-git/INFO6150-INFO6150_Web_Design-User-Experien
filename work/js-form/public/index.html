@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Cats News Subscription</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header>
+        <h1> Subscribe To Cats News </h1>
+    </header>
+    <main>
+        <p>Sign up to receive the free Modern Cat newsletter (giveaways, exclusive content, expert advice, CUTE CATS,
+            and more!)</p>
+        <fieldset>
+            <div class="message">
+                <p>Required fields are followed by <span aria-label="required">*</span></p>
+            </div>
+
+            <form id="register" class="formbox" action="/register" method="post">
+
+                <label for="name"> * Name: </label>
+                <span class="register-name__error">
+                    Name is required.
+                </span>
+                <input type="text" class="register-name" id="name" name="name">
+
+                <label for="email"> * Email: </label>
+                <span class="register-email__error"></span>
+                <input type="text" id="email" class="email" name="email">
+
+                <label for="confirm-email"> * Confirm Email: </label>
+                <span class="register-confirm__error"></span>
+                <input type="text" id="confirm-email" class="confirm-email" name="confirm-email">
+
+                <label for="tier">* Tier</label>
+                <select name="tier" id="tier" required>
+                    <option value="">Please select</option>
+                    <option value="1">Silver Tier</option>
+                    <option value="2">Gold Tier</option>
+                    <option value="3">Platinum Tier</option>
+                </select>
+
+                <div class="email">
+                    <input type="checkbox" id="wants-spam" name="wants-spam" checked>
+                    <label for="wants-spam"> Do you want us to send you annoying emails?</label>
+                </div>
+
+
+                <div class="submit">
+                    <input type="submit" value="Register">
+                </div>
+
+
+            </form>
+
+        </fieldset>
+    </main>
+
+    <footer class="pageFooter">
+        <ul class="footer-links">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms and Condition</a></li>
+        </ul>
+        </div>
+        <p>&copy; cat.com Inc. All Rights Reserved. <a href="contact.html"> Contact Us | </a> <a href="company.html">Our Company | </a> <a
+                href="careers.html">Careers </a></p>
+        </div>
+
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

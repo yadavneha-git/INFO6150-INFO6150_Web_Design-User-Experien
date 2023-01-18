@@ -1,0 +1,162 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+
+    padding: 0;
+    margin: 0; 
+
+    background-color: lavender;
+    font-family: sans-serif;
+}
+
+body {
+    display: grid;
+}
+
+h1{
+    margin: 0;
+    font-family: Apple chancery;
+    text-align: center;
+    font-size: 3.5rem;
+    
+}
+
+h2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+
+    padding: 1rem;
+    margin: 0px;
+}
+
+.nav_menu{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    list-style-type: none;
+
+    padding: 1rem;
+    margin: 0px;
+
+    
+
+}
+.Card:hover{
+    box-shadow: none;
+}
+
+
+.Cards{
+    display: grid;
+    grid-template-columns:repeat(12, 1fr);
+    justify-content: space-evenly;
+
+    padding: 1rem;
+    margin-inline-end: 0px;
+    
+    gap: 1rem ;
+
+    
+}
+
+.Card{
+    display: flex;
+    flex-direction: column;
+    grid-column-start: 2;
+    grid-column-end: 12;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 100%;
+
+    padding: 1rem;
+    margin: 0px;
+
+    background-color: rebeccapurple ;
+    border: 1px solid black; 
+    border-radius: 2rem;
+    background-color: pink;
+    box-shadow: 3px 3px 3px 3px white;
+
+}
+
+.card-link{
+    padding: 1rem;
+    
+    border-radius: 1rem;
+    color:white;
+    text-decoration-color: none;
+}
+
+.Card-pic{
+    aspect-ratio: 1/1;
+    width: 50%;
+}
+
+Footer{
+    display: grid;
+}
+
+.Footer-menu{
+display: flex;
+flex-direction: column;
+text-align: left;
+list-style-type: none;
+
+padding: 1rem;
+margin: 0px;
+
+font-size: 0.8rem;
+}
+
+@media screen and (min-width: 50rem){
+    html,body{
+        display: grid;
+        padding: 1rem;
+        background-color:palegoldenrod; 
+    }
+    
+.nav_menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.Card{
+        grid-column: span 3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    
+        padding: 1rem;
+        margin: 0px;
+        border: 1px solid black; 
+        border-radius: 2rem;
+    
+        background-color: pink;
+        box-shadow: 3px 3px 3px 3px grey;
+    }
+    
+.Footer-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+        }
+
+}

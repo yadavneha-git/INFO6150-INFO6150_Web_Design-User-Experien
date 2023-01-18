@@ -1,0 +1,176 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+} 
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+
+    padding: 0;
+    margin: 0;
+
+    background-color: lightsteelblue;
+    font-family: Arial;
+}
+
+header {
+    padding: 1rem;
+    margin: 0;
+    width: 100%;
+
+    background-color: plum;
+    font-family: Arial;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 1rem;
+}
+
+.formbox {
+    display: grid;
+    grid-template-columns: [labels] auto [controls] 1fr;
+    grid-auto-flow: row dense;
+    grid-gap: .8rem;
+    background: whitesmoke;
+    padding: 1.2rem;
+}
+
+.formbox>label {
+    grid-column: 1;
+    grid-row: auto;
+}
+
+.formbox>input#text {
+    grid-column: 2;
+    grid-row: auto;
+    padding: 1rem;
+    border: none;
+}
+
+.formbox>.submit {
+    grid-column: 1;
+    grid-row: auto;
+    padding: 1rem;
+    border: none;
+
+}
+
+input[type=submit] {
+    background-color: lightgrey;
+    color: black;
+    border: none;
+    width: 100%;
+    padding: 14px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.formbox p {
+    min-height: calc(100% - 2rem);
+    width: 100%;
+    border: none;
+}
+
+.formbox>.email {
+    grid-column: 1;
+    grid-row: auto;
+    padding: 0;
+    border: none;
+}
+
+fieldset {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+footer {
+
+    display: inline-block;
+    width: 100%;
+   
+    padding: 1rem;
+    margin-right: 1rem;
+    background-color: blanchedalmond;
+    color: black;
+    border-top: 1px solid rgb(25, 24, 24);
+    box-sizing: border-box;
+
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-evenly;
+    list-style-type: none;
+    
+    font: sans-serif;
+    text-transform: uppercase;
+
+}
+
+li {
+    margin: 0.3rem;
+    padding: 0.3rem;
+
+}
+
+ul.footer-links {
+    padding: 0%;
+    margin: 0%;
+}
+
+@media screen and (max-width: 50rem) {
+
+    html,
+    body {
+        display: grid;
+        grid-template-columns: auto;
+        background-color: lightslategray;
+        padding: 0;
+        width: 100%;
+        margin: 0;
+    }
+
+    label,
+    input,
+    .email {
+        grid-column: span 2;
+    }
+
+    select#tier {
+        grid-column: span 2;
+    }
+
+    fieldset {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    footer {
+        background-color: silver;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+}

@@ -1,0 +1,77 @@
+#homepage {
+    display: grid;
+    grid-template-areas:
+      "head head"
+      "nav  main"
+      "foot  foot";
+    grid-template-rows: 50px 1fr 50px;
+    grid-template-columns: 0.35fr 1fr;
+  }
+
+
+#homepage > header {
+    grid-area: head;
+    background-color: plum;
+}
+
+.menu{
+    list-style-type: none;
+    padding: 0;
+    margin: 0; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.menu li {
+    display: flex;
+    padding: 15px;
+}
+
+.menu li:hover {
+    background-color: rebeccapurple;  
+    
+}
+
+.menu li:hover a {
+    background-color: rebeccapurple;
+    color: white;
+}
+#homepage > nav {
+    grid-area: nav;
+    background-color: pink;
+    border-right: 1px solid black;
+}
+
+.local-menu li:hover {
+    background-color: plum;
+}
+
+.local-menu li:hover a {
+    background-color: plum;
+}
+
+.local-menu li {
+    list-style-type: none;
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    writing-mode: horizontal-tb;
+}
+
+.local-menu ul {
+    padding-inline-start: 10px
+}
+
+#homepage > main {
+    grid-area: main;
+    background-color: pink;
+    padding: 15px;
+  }
+  
+#homepage > footer {
+    grid-area: foot;
+    background-color: plum; 
+    padding-left: 1.3em;
+    padding-top: 1em;
+  }
+  
