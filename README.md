@@ -4,28 +4,7 @@
 
 For all of the items listed here I will offer what support I can, but deciphering the needs of different operating systems and different software bugs is beyond the scope of this class and often outside my skillset.  
 
-## Accounts
-### Github.com
-You will need a (free of cost) account on github.com
-* https://github.com/
-
-Existing accounts are fine.
-
-I recommend using only LOWERCASE letters in your username, because it makes things harder when you need to also worry about capitalization.  That is just a recommendation, not a requirement
-
-### Slack.com
-You will need a (free of cost) account on slack.com to join in the discussion there.  That account is specific to the class workspace (there is not a "general" account as on github)
-* https://rebrand.ly/seainfo6150-slack
-
-I recommend the desktop client and/or the mobile client over the web-based one.  Slack is where most info on the class is discussed, just like many programming shops.
-
 ## Required Software
-### Git
-You will need to install a git client (free of cost):
-* https://git-scm.com/downloads
-
-All instruction and examples in class use the **command-line client**, not a graphical one.  
-
 ### NodeJS and npm
 You will need to install a recent version of NodeJS (which will also install npm) (free of cost)
 * https://nodejs.org/   (I recommend LTS version)
